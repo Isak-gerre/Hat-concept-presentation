@@ -11,12 +11,13 @@ body {
     color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
-    background-color: antiquewhite;
+    background-color:#FFF8F1;
 }
 #analys { 
     max-width: 1200px;
     width: 100%;
     margin: 30px 0px;
+    border-radius: 20px;
     background-color: white;
 }
 #preload {
@@ -154,4 +155,7 @@ font-style: normal;
 .fade {
     animation: fade-in 1s ease forwards;
     animation-delay: .4s;
+}
+li {
+    margin: 10px 20px;
 }
