@@ -9,6 +9,15 @@ body {
     font-family: var(--font);
     overflow-x: hidden;
     color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+#analys { 
+    max-width: 1200px;
+    width: 100%;
+    margin: 30px 0px;
+    background-color: white;
 }
 #preload {
     width: 100vw;
@@ -47,29 +56,102 @@ body {
 .chapter {
     display: flex;
     flex-direction: row;
+    margin: 70px 0;
 }
 .chapter > div {
     flex-grow: 1;
     width: 50%;
 }
 .left {
-    /* display: flex;
-    justify-content: flex-end;
-    align-items: center; */
-    padding: 40px;
+padding: 30px 40px;
     position: relative;
+}
+.right {
+        opacity: 0;
+        transform: translateY(30px)
 }
 .chapter-title {
 position: sticky;
 top: 50%;
+right: 0;
 color: rgba(0, 0, 0, 0.7);
+text-align: end;
+}
+h3.chapter-rubrik {
+font-size: 24px;
+margin: 30px 0px;
+}
+h4.chapter-rubrik {
+font-size: 20px;
+margin: 30px 0px;
+}
+.chapter-text {
+font-size: 14px;
+max-width: 60ch;
+margin: 30px 0px;
 }
 .chapter-images {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     width: fit-content;
 }
 .chapter-image {
-    height: 200px;
+    height: 100px;
+}
+.bold {
+    font-weight: bold;
+}
+.typo-div {
+    display: flex;
+    flex-direction: row;
+}
+.typo-title {
+    margin: 10px 20px;
+    min-width: 145px;
+}
+.typo-text {
+    margin: 10px 20px;
+    padding-left: 10px;
+    border-left: 2px solid black;
+    max-width: 55ch;
+}
+.arabesque {
+font-family: hwt-arabesque,
+sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+.archivo-ebold {
+    font-family: 'Archivo',
+    sans-serif;
+    font-weight: 800;
+}
+.archivo-medium {
+    font-family: 'Archivo',
+    sans-serif;
+    font-weight: 500;
+}
+.archivo-light {
+    font-family: 'Archivo',
+    sans-serif;
+    font-weight: 300;
+}
+.poppins {
+    font-family: 'Poppins',
+    sans-serif;
+}
+.webb-mobile-image, .webb-image {
+    width: 400px;
+}
+
+@keyframes fade-in {
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+.fade {
+    animation: fade-in 1s ease forwards;
+    animation-delay: .4s;
 }
